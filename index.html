@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<!-- title -->
+	<title>Sorting Visualizer</title>
+
+	<!-- linking style.css -->
+	<link href="style.css" rel="stylesheet" />
+    
+</head>
+
+<!-- body -->
+<body >
+	<div></div>
+<section class="head">Sorting Visualizer</section>
+<section class="data-container" style="width: 40%; display:flex; align-items:center;"></section>
+	
+
+<!-- Div to store main controls -->
+<div class="add-array-elements" style="position: relative;">
+	<button class="btn1" onclick="generate()" id="Button1" style="margin-top: 10px;" >Generate Random Array</button>
+	<div id="adjust-speed-div">
+		<h1 id="Speed-Adjust-Text">Adjust Speed</h1>
+		<input type="range" min="10" max="390" value="200" class="SpeedSlider" id="sortingSpeed">
+	</div>
+	<div id="boxy" style="position: relative; bottom: 20px;">
+		<label id="SelectLabel" >Select an option to create your own array<p id="SizeDisplay">Max Size: 20</p></label>
+		<select  id="Selection" onchange="selectoption()">
+			<option value="unselected">-Select-</option>
+			<option value="one-by-one">Add one by one</option>
+			<option value="all-together">Add all together</option>
+		</select>
+		
+		<span id="SetArrSize" /*hidden*/>
+			<label>Set Max Array Size</label>
+			<input type="text" id="Size_Input" placeholder="Array Size (1-30)" size="14">
+		</span>
+	</div>
+	<!-- main input for the array -->
+	<input id="userdefined-input" type="text"  placeholder="Value" autocomplete="off" disabled = "true" style="background-color: #b0afaf9c;">
+	<!-- Button to add the whole array or one by one  It will either be caled 'add' or 'create array' -->
+	<button type="button" class="btn1" id="AddButton" onclick=""  disabled = "true" style="background-color: #d8b6ff; margin-left:5px;" >Add</button>
+	<!-- Button to remove the last element from array or clear the whole array -->
+	<button class="btn1" onclick="" id="RemoveButton"  disabled = "true" style="background-color: #d8b6ff;">Remove</button>
+	<!-- Error message -->
+	<span id="error"></span>
+
+
+	<!-- Sorting buttons -->
+	<button class="btn1" onclick="BubbleSort(),disable()"  id="Button1" style="position:absolute; left:550px; top:-10px; margin-top:45px; margin-bottom: 10px; margin-left:20px; ">Bubble Sort</button>
+	<br>
+	<button class="btn1" onclick="SelectionSort(),disable()" id="Button1" style="position:absolute; left:550px; top:85px; margin-bottom: 10px; margin-left:20px;">Selection Sort</button>
+	<br>
+	<button class="btn1" onclick="InsertionSort(),disable()" id="Button1" style="position:absolute; left:550px; top: 135px; margin-left:20px;">Insertion Sort</button>
+	
+</div>
+</body>
+
+<!-- linking index.js -->
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,132 @@
+
+body {
+	background-color: rgb(255, 235, 211);
+	font-family: Verdana, sans-serif;
+
+}
+
+.head {
+	margin-top: 20px;
+	margin-right: 20vw;
+	margin-left: 20vw;
+	text-align: center;
+	font-size: 26px;
+	background-color: #6f459e;
+	color: white;
+	border-radius: 19px;
+	font-weight: bolder;
+	padding: 10px;
+}
+
+.data-container {
+	width: 600px;
+	height: 384px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.add-array-elements {
+	height: 200px;
+	width: 50%;
+	margin:auto;
+	padding: 20px;
+}
+
+.bar {
+	width: 28px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(0, 183, 255);
+	transition: 0.2s all ease;
+}
+
+.btn1 {
+	padding: 10px;
+	font-weight: bolder;
+	background-color: #6f459e;
+	border-radius: 10px;
+	color: white;
+	font-size: 14px;
+	border: white;
+}
+
+input {
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+/* user agent stylesheet */
+input[type="text" i] {
+    padding: 1px 2px;
+}
+/* user agent stylesheet */
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+#boxy{
+	margin-top: 20px;
+}
+#SelectLabel{
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+} 
+
+#SetArrSize{
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	left: 230px;
+	bottom: 50px;
+}
+#Size_Input{
+	position: relative;
+	top: 25px;
+	right: 130px;
+}
+
+#SizeDisplay {
+	margin: 0px;
+}
+
+#adjust-speed-div{
+	position: relative;
+	left: 350px;
+	bottom: 40px;
+	width: 150px;
+	height: 50px;
+}
+
+#Speed-Adjust-Text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.SpeedSlider {
+	cursor: pointer;
+	position: relative;
+	bottom:10px;
+}
